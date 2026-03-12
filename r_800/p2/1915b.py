@@ -1,0 +1,12 @@
+for _ in range(int(input())):
+    grid = [input().strip() for _ in range(3)]
+
+    for row in grid:
+        if '?' in row:
+            if 'A' not in row:
+                print('A')
+            elif 'B' not in row:
+                print('B')
+            else:
+                print('C')
+            break
